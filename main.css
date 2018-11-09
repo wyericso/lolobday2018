@@ -1,0 +1,141 @@
+.carousel-item > img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.sections {
+    position: relative;
+  }
+
+img.others {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 100%;
+    filter: opacity(90%);
+    filter: sepia(50%) brightness(50%);
+    position: absolute;
+    z-index: -1;
+}
+
+.d-info {
+    height: 100vh;
+    min-height: 640px;
+    color: white;
+    padding-top: 10vh;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.row {
+    z-index: 100;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid;
+    max-width: 576px;
+    padding: 20px 0;
+}
+
+#partywet {
+    font-family: "Roboto Slab", serif;
+    white-space: nowrap;
+}
+
+.notes {
+    margin: 7% 0;
+    font-size: 0.75em;
+    text-align: initial;
+}
+
+@media (min-width: 576px) {
+    .row {
+        max-width: 80%;
+    }
+    #partywet {
+        font-size: 1.25em;
+    }
+    .d-info {
+        font-size: 30px;
+    }
+    .notes {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-info {
+        font-size: 36px;
+    }
+    .notes {
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width: 992px) {
+    #partywet {
+        font-size: 60px;
+    }
+    .row {
+        max-width: 794px;
+    }
+}
+
+@media (orientation: portrait) {
+    .carousel-item > img {
+        height: unset;
+    }
+}
+
+.row:nth-child(2) {
+    word-break: keep-all;
+}
+
+.col-6:first-child {
+    border-right: 1px solid;
+}
+
+.p-info {
+    margin: auto;
+}
+
+#hhpt {
+    font-family: "Pangolin", cursive;
+}
+
+iframe {
+    width: 80%;
+    height: 80vh;
+    margin: 10vh 10%;
+  }
+  
+#contactus {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    color: rgb(64, 64, 64);
+}
+  
+#contactus > a {
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    padding: 1px;
+    margin: 10px 0;
+    color: rgb(132, 193, 129);
+    transition: all .3s ease-in-out;
+}
+  
+#contactus a:hover {
+    border: 1px solid white;
+    background-color: rgb(132, 193, 129);
+    color: white;
+}
+  
+#d-map {
+    background-color: rgb(202, 233, 189);
+    background-image: url(https://static.wixstatic.com/media/3978993e99184d5e8c21f0204cd07bca.png/v1/fill/w_150,h_150,al_c/3978993e99184d5e8c21f0204cd07bca.png);
+    height: 100vh;
+}
